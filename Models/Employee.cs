@@ -13,6 +13,7 @@ namespace ConsumeWebApiProject.Models
 
         [Required]
         [StringLength(35, ErrorMessage = "Name not be exceed")]
+        [RegularExpression("[A-Za-z]*", ErrorMessage = "Invalid Name ")]
         public string name { get; set; }
         [Required]
         public string gender { get; set; }
